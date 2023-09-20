@@ -25,13 +25,14 @@ public class buttonAction : MonoBehaviour
         //Debug.Log(planetid.text);
         try{
             int id = Convert.ToInt32(planetid.text);
-            if(id > 20 || id < 0){
+            if(id > 30 || id < 0){
                 return;
             }
             id--;
             planets[id].SetActive(true);
         }catch(Exception e){
             Debug.Log(e.ToString());
+            Debug.Log("error was found");
         }
         
     }
