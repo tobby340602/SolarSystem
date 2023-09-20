@@ -9,6 +9,7 @@ public class buttonAction : MonoBehaviour
     public GameObject menu = null;
     public GameObject panel = null;
     public TMP_InputField planetid = null;
+    
     public GameObject[] planets;
     
     public void onClickMenu(){
@@ -24,7 +25,7 @@ public class buttonAction : MonoBehaviour
         //Debug.Log(planetid.text);
         try{
             int id = Convert.ToInt32(planetid.text);
-            if(id > 10 || id < 0){
+            if(id > 20 || id < 0){
                 return;
             }
             id--;
